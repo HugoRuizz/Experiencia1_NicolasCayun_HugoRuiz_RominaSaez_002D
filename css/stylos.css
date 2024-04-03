@@ -1,0 +1,190 @@
+html {
+    box-sizing: border-box;
+    font-size: 20.5%; /* 1 rem = 10px */    
+}
+
+
+
+body{
+    background-color: rgb(230, 188, 194);
+}
+h1{
+   color: #dbb5cd;
+   text-align: center;
+}
+/* Estilos para el menú de navegación */
+.navegacion {
+    background-color: #fff; /* Fondo blanco para el menú */
+    padding: 10px; /* Espaciado interno para los enlaces */
+    text-align:right;
+}
+
+.navegacion__enlace {
+    text-decoration: none; /* sin subrayado en enlace */
+    color: #dbb5cd; /* Color de texto  */
+    font-family: 'Shadows Into Light', sans-serif; /* Fuente de la letra */
+    font-size: 18px; /* Tamaño de la letra */
+    font-style: italic;/*cursiva*/
+    margin-right: 20px; /* espacio a la derecha */
+}
+
+
+.navegacion__enlace:hover
+
+ {
+    color: rgb(199, 151, 184); /* Cambia de color al pasar el mouse */
+}
+
+.titulo__texto {
+    font-family: 'Shadows Into Light', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #dba3ba; /* Color del texto del título */
+    background-color: transparent; /* Fondo del título */
+    padding: 10px; /* Espaciado interno del título */
+    border-radius: 5px; /* Bordes redondeados para el título */
+}
+
+
+.titulo__texto::before,
+.titulo__texto::after {
+    content: "\2665"; /* Código Unicode del corazón negro */
+    color: rgb(216, 174, 194); /* Color de los corazones */
+    font-size: 20px; /* Tamaño de los corazones */
+}
+.centrar {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.carrusel-central {
+    display: flex;
+    margin: 0 auto;
+    width: 40%;
+    height: auto;
+}
+.texto{
+    padding-left: 2cm;
+    max-width: 30cm;
+    display: flex;
+    font-family: 'Shadows Into Light', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin: 0 auto;
+}
+.carousel-item img {
+    width: 40%; 
+    height: auto; /* Altura automática para mantener la proporción */
+    margin: 0 auto;
+}
+.descripcion {
+    font-family: 'Shadows Into Light', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: white; /* Color de texto de los estilos CSS */
+    line-height: 1.6; /* Espaciado entre líneas */
+    text-align: left; /*centrar a la izquierda*/
+    opacity : 0 ; 
+    transition : opacity 2s ease; 
+    line-height:1.6;
+}
+@media (max-width: 768px) {
+    .descripcion {
+        text-align: center;
+    }
+}
+.titulo__quienes-somos ,
+.titulo__mision,
+.titulo__vision{
+    font-family: 'Shadows Into Light', sans-serif;
+    font-size: 40px; /* Tamaño del título */
+    color: white; /* Color de texto del título */
+    text-align: left; /* Centrar el título */
+    margin-bottom: 20px;
+}
+
+.fadeIn{
+    opacity:1;
+}
+.img-container{
+    max-width :100%;
+    height: auto;
+}
+.img-containere img {
+    max-width :100%;
+    height: auto;
+    
+}
+@media (min-width:992px){
+    .img-container{
+        margin-left:30;
+    }
+}
+
+.footer {
+    background-color: antiquewhite;
+    color: #dba3ba;
+    padding: 20px 0;
+    text-align: center;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+}
+.footer-text{
+    font-size: 14px;
+}
+.social-icons a{
+    color: #fff;
+    font-size:40px;
+    margin-right: 30px;
+}
+.col img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+.navegacion__fotos:hover img {
+    filter: brightness(80%); /* Cambia el brillso al 80% al pasar el mouse */
+}
+.video-link {
+    font-family: 'Shadows Into Light', sans-serif;
+    font-size: 18px; /* Tamaño del texto */
+    color:white; /* Color del texto */
+    text-decoration: underline; /* Subrayado del texto */
+}
+
+.video-link:hover {
+    font-family: 'Shadows Into Light', sans-serif;
+    color: white ; /* Color del texto al pasar el mouse por encima */
+}
+.video-link-container {
+    text-align: right; /* Centrar video a la derecha */
+}
+
+imagen- foto {
+    position: absolute;
+}
+.contenido-superpuesto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+.mision-vision {
+    display: flex;
+    align-items: center;
+}
+.titulo__vision,
+.titulo__mision {
+    margin-bottom: 1; /* Eliminar el margen inferior para alinear los títulos */
+}
+
+.nav-link .nav-item {
+    color: #dba3ba; /* Cambia #ff0000 al color que desees */
+}
+
+
